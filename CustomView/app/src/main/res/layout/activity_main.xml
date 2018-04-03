@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.cly.customview.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+<com.cly.customview.custom.DailScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <com.cly.customview.custom.PieView
+                android:id="@+id/pv"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+
+                app:textSize="30sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="width："
+                    />
+                <EditText
+                    android:id="@+id/et_w"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="height："
+                    />
+
+                <EditText
+                    android:id="@+id/et_h"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="度数"
+                    />
+                 <EditText
+                     android:id="@+id/et_d"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text=""
+                     />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="改变"
+                />
+        </LinearLayout>
+
+
+</com.cly.customview.custom.DailScrollView>
+</LinearLayout>
